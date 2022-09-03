@@ -34,7 +34,8 @@ function startSearch() {
       generateHeader(qNum, returnTo);
 
       var offset = 0;
-      getImages(qNum, offset);
+      //getImages(qNum, offset);
+      getAnslagstavla(qNum, offset);
     } else {
       displayError(qNum + ' is not a valid Q-number.')
     }
@@ -80,6 +81,37 @@ function generateHeader(qNum, returnTo) {
     }
   }
 }
+class SPARQLQueryDispatcher {
+	constructor( endpoint ) {
+		this.endpoint = endpoint;
+	}
+
+	query( sparqlQuery ) {
+		const fullUrl = this.endpoint + '?query=' + encodeURIComponent( sparqlQuery );
+		const headers = { 'Accept': 'application/sparql-results+json' };
+
+		return fetch( fullUrl, { headers } ).then( body => body.json() );
+	}
+}
+function getAnslagstavla(qNum, returnTo) {
+const endpointUrl = 'https://sweopendata.wikibase.cloud/query/sparql';
+const sparqlQuery = `PREFIX wb: <https://sweopendata.wikibase.cloud/entity/>
+PREFIX wbt: <https://sweopendata.wikibase.cloud/prop/direct/>
+
+SELECT ?a ?aLabel ?subjLabel WHERE {
+   ?a wbt:P2 wb:Q572 .
+   ?a wbt:P22 "`+ qNum +`"
+   optional {?a wbt:P22 ?subj}
+
+  BIND(URI(concat("http://www.wikidata.org/entity/",?wdQ)) AS ?wikidata_iri)
+  
+	SERVICE wikibase:label { bd:serviceParam wikibase:language "sv,en". }
+}`;
+
+const queryDispatcher = new SPARQLQueryDispatcher( endpointUrl );
+queryDispatcher.query( sparqlQuery ).then( console.log );
+}
+
 
 function getImages(qNum, offset) {
   // Query Commons API for image titles
