@@ -1,4 +1,4 @@
-const SITE_URL = 'https://view-it.toolforge.org/';
+const SITE_URL = 'https://salgo60.github.io/Anslagstavla/';
 const IMG_WIDTH = '320';
 const IMG_HEIGHT = '200';
 const NUM_RESULTS = 20;
@@ -60,16 +60,16 @@ function generateHeader(qNum, returnTo) {
     resultsHeaderLink.innerHTML = qNum;
 
     // Get Q-number details
-    fetch('https://www.wikidata.org/w/api.php?action=wbgetentities&ids=' + qNum + '&props=labels&languages=en&format=json&origin=' + ORIGIN, {
+    fetch('https://www.wikidata.org/w/api.php?action=wbgetentities&ids=' + qNum + '&props=labels&languages=sv&format=json&origin=' + ORIGIN, {
       method: 'GET',
       headers: new Headers({
         'Api-User-Agent': USER_AGENT
       })
     }).then((response) => response.json())
       .then((data) => {
-        const label = data['entities']['' + qNum]['labels']['en']['value'];
+        const label = data['entities']['' + qNum]['labels']['sv']['value'];
         const resultsHeader = document.getElementById('imagesDepicting');
-        resultsHeader.innerHTML = 'Images depicting <a href="https://www.wikidata.org/wiki/' + qNum + '" target="_blank">' + qNum + '</a> (' + label + ')';
+        resultsHeader.innerHTML = 'Kommundokument om <a href="https://www.wikidata.org/wiki/' + qNum + '" target="_blank">' + qNum + '</a> (' + label + ')';
       });
 
     // Show "back to article" button
@@ -83,7 +83,9 @@ function generateHeader(qNum, returnTo) {
 
 function getImages(qNum, offset) {
   // Query Commons API for image titles
-  const fetchImagesURL = new URL("https://commons.wikimedia.org/w/api.php");
+  // const fetchImagesURL = new URL("https://commons.wikimedia.org/w/api.php");
+  const fetchImagesURL = new URL("https://sweopendata.wikibase.cloud/w/api.php");
+ 
   fetchImagesURL.searchParams.append("action", "query");
   fetchImagesURL.searchParams.append("cirrusDumpResult", "true");
   fetchImagesURL.searchParams.append("format", "json");
@@ -130,7 +132,7 @@ function getImages(qNum, offset) {
         fetch(fetchThumbnailsURL, {
           method: 'GET',
           headers: new Headers({
-            'Api-User-Agent': 'View-it! [In Development] (https://view-it.toolforge.org/)'
+            'Api-User-Agent': 'Anslagstavla! [In Development] (https://github.com/salgo60/Anslagstavla)'
           })
         }).then((response) => response.json())
           .then((data) => {
