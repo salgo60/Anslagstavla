@@ -120,7 +120,9 @@ function getImages(qNum, offset) {
         var imageTitlesStr = imageTitlesArray.join('|').replace(/ /g, "_");
 
         // Fetch thumbnails
-        const fetchThumbnailsURL = new URL("https://commons.wikimedia.org/w/api.php")
+        //const fetchThumbnailsURL = new URL("https://commons.wikimedia.org/w/api.php")
+        const fetchThumbnailsURL = new URL("https://sweopendata.wikibase.cloud/w/api.php")
+
         fetchThumbnailsURL.searchParams.append("action", "query");
         fetchThumbnailsURL.searchParams.append("format", "json");
         fetchThumbnailsURL.searchParams.append("iiprop", "url");
