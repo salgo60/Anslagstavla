@@ -9,6 +9,7 @@
                         margin-left: 50px;
                         margin-bottom: 10px;}
     </style>
+    <script src="index.js"></script> 
   </head>
 
   <body>
@@ -25,6 +26,30 @@
           
     <!--Main-->
     <h1>Anslagstavlor Sveriges kommuner</h1>
-   
- </body>
- </html>
+    <div class="form">
+      <form>
+        <input id="qNumberInput" type="search" name="q" placeholder="Enter Wikidata Q-number here">
+        <button type="submit" onClick="searchFromTextbox()">Submit</button>
+      </form>
+    </div>
+
+    <br />
+
+    <div id="error"></div>
+
+    <div id="results">
+      <div id="resultsHeader">
+        <span id="imagesDepicting">
+          Images depicting <a id="resultsHeaderLink" href="" target="_blank"></a>
+        </span>
+        <br /><br />
+        <span id="numResults">?</span> results found
+        <br /><br />
+      </div>
+      <a id="returnToLink" href="">
+        <button>Return to article</button>
+      </a>
+    </div>
+  </body>
+</html>    
+
