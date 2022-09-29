@@ -4,3 +4,6 @@ Se om vi kan koppla ihop Wikipedia med Anslagstavlor som finns i <a target=_blan
 * Test sidor 
   *  <a target="_blank" href="https://www.wikidata.org/wiki/Special:GoToLinkedPage/svwiki/Q10728573" target="_blank">Överförmyndare</a> / <a target="_blank" href="https://www.wikidata.org/wiki/Special:GoToLinkedPage/fiwiki/Q10728573">fi</a>
   *  <a target="_blank" href="https://www.wikidata.org/wiki/Special:GoToLinkedPage/svwiki/Q60970797">Kulturnämnd</a>
+
+## Misc
+* [POC](https://github.com/salgo60/ProjectOutdoorGyms/issues/120#issuecomment-1242183361)
