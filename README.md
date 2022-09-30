@@ -20,6 +20,10 @@ En variant är om vi kan koppla ihop Wikipedia med dokument i Anslagstavlor kans
   *  <a target="_blank" href="https://www.wikidata.org/wiki/Special:GoToLinkedPage/svwiki/Q10728573" target="_blank">Överförmyndare</a> / <a target="_blank" href="https://www.wikidata.org/wiki/Special:GoToLinkedPage/fiwiki/Q10728573">fi</a>
   *  <a target="_blank" href="https://www.wikidata.org/wiki/Special:GoToLinkedPage/svwiki/Q60970797">Kulturnämnd</a>
 
+## Kommunallagen
+<img width="715" alt="image" src="https://user-images.githubusercontent.com/14206509/193219069-2d5acc21-ec90-46aa-8384-f8a63c33ca98.png">
+* [SFS 2017:725](https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/kommunallag-2017725_sfs-2017-725)
+
 ## Misc
 * [POC](https://github.com/salgo60/ProjectOutdoorGyms/issues/120#issuecomment-1242183361)
 * Bok om [Kunskapsgrafer](https://kgbook.org/) av Ying Ding et al... video med henne ["Scalable Graph Search & Graph Mining"](https://watch.knowledgegraph.tech/videos/ying-ding-katana-graph-solutions-scalable-graph-search-graph-mining)
