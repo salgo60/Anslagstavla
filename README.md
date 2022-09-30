@@ -1,7 +1,7 @@
 # Anslagstavla
 [Nationell dataverkstaden](https://www.vgregion.se/ov/dataverkstad/) försöker nu implementera en bättre lösning för kommuners Anslagstavlor. Just nu finns delar av detta uppdrag hos Metasolution....
 
-Om [nationell dataverkstaden](https://www.vgregion.se/ov/dataverkstad)
+Om [nationell dataverkstaden](https://www.vgregion.se/ov/dataverkstad) / [IA 20220930](https://web.archive.org/web/20220930120504/https://www.vgregion.se/ov/dataverkstad)
 
 <img width="629" alt="image" src="https://user-images.githubusercontent.com/14206509/193143626-135d51d0-20f7-4e13-adef-42e6980bb357.png">
 
