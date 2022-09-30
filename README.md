@@ -21,7 +21,7 @@ En variant är om vi kan koppla ihop Wikipedia med dokument i Anslagstavlor kans
   *  <a target="_blank" href="https://www.wikidata.org/wiki/Special:GoToLinkedPage/svwiki/Q60970797">Kulturnämnd</a>
 
 ## Kommunallagen
-Är relativt tydlig vad som gäller och pekar på att en websida kan användas!!!
+Är relativt tydlig vad som gäller och pekar på att en websida kan användas!!! en av få gånger jag tycker våra lagstiftare pekar på digitala lösningars möjligheter.... **Felet** tror jag är att dom inte tar höjd och pekar på Öppna data
 <img width="715" alt="image" src="https://user-images.githubusercontent.com/14206509/193219069-2d5acc21-ec90-46aa-8384-f8a63c33ca98.png">
 
 * [SFS 2017:725](https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/kommunallag-2017725_sfs-2017-725)
