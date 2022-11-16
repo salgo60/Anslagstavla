@@ -1,3 +1,8 @@
+* [Nationell dataverkstad skuggbacklog](https://github.com/salgo60/Anslagstavla/issues/3)
+* jmf 
+  * [Riksdagens öppna data](https://github.com/salgo60/Wikidata_riksdagen-corpus/issues/50)
+  * [DIGG](https://github.com/salgo60/DiggUptime/issues/47)
+
 # Anslagstavla
 [Nationell dataverkstaden](https://www.vgregion.se/ov/dataverkstad/) försöker nu implementera en bättre lösning för kommuners Anslagstavlor. Just nu finns delar av detta uppdrag hos Metasolution....
 
