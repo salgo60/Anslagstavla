@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/532209890.svg)](https://zenodo.org/doi/10.5281/zenodo.11183750)
 * [Nationell dataverkstad skuggbacklog](https://github.com/salgo60/Anslagstavla/issues/3)
 * jmf 
   * [Riksdagens öppna data](https://github.com/salgo60/Wikidata_riksdagen-corpus/issues/50)
